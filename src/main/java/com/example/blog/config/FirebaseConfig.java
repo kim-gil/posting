@@ -12,7 +12,7 @@ import java.io.IOException;
 @Configuration
 public class FirebaseConfig {
     @PostConstruct
-    public void init()  {
+    public void init() {
         try {
             FileInputStream serviceAccountFile = new FileInputStream("src/main/resources/serviceAccount-File.json");
             FirebaseOptions options = FirebaseOptions
@@ -22,7 +22,7 @@ public class FirebaseConfig {
                     .build();
 
             FirebaseApp.initializeApp(options);
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
