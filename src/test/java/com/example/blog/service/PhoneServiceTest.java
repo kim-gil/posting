@@ -22,4 +22,18 @@ class PhoneServiceTest {
         System.out.println(result);
     }
 
+    @Test
+    public void getPhoneInfo() throws ExecutionException, InterruptedException {
+        Phone result = phoneService.getPhoneInfo("123123");
+        System.out.println(result.getPhoneName());
+        System.out.println(result.getCompany());
+        System.out.println(result.getTelecom());
+    }
+    @Test
+    public void updatePhoneInfo() throws ExecutionException, InterruptedException {
+        Phone phone = new Phone("123123","LG","kt");
+        String result = phoneService.updatePhoneInfo(phone);
+        System.out.println(result);
+    }
+
 }
