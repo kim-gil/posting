@@ -43,4 +43,10 @@ public class PhoneService {
                 dbFireStore.collection(COL_NAME).document(phone.getPhoneName()).set(phone);
         return collectionsApiFuture.get().getUpdateTime().toString();
     }
+    public String deletePhoneInfo(String phoneName){
+        Firestore dbFireStore = FirestoreClient.getFirestore();
+        ApiFuture<WriteResult> writeResult =
+                dbFireStore.collection(COL_NAME).document(phoneName).delete();
+        return "삭제 완료";
+    }
 }

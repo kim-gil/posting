@@ -35,5 +35,10 @@ class PhoneServiceTest {
         String result = phoneService.updatePhoneInfo(phone);
         System.out.println(result);
     }
+    @Test
+    public void deletePhoneInfo(){
+        String result = phoneService.deletePhoneInfo("123123");
+        System.out.println(result);
+    }
 
 }
