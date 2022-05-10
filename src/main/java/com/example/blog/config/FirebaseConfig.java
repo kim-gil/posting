@@ -23,9 +23,4 @@ public class FirebaseConfig {
                 .build();
         return FirebaseApp.initializeApp(options);
     }
-
-    @Bean
-    public FirebaseMessaging firebaseMessaging(FirebaseApp app) throws IOException {
-        return FirebaseMessaging.getInstance(app);
-    }
 }

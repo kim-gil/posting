@@ -15,9 +15,5 @@ public class FirebaseMessagingController {
     public FirebaseMessagingController(FirebaseMessagingService firebaseMessagingService) {
         this.firebaseMessagingService = firebaseMessagingService;
     }
-    @ResponseBody
-    @RequestMapping("/send-notification")
-    public String sendFirebaseMessaging(@RequestParam String token,@RequestParam String title,@RequestParam String content) throws FirebaseMessagingException {
-        return firebaseMessagingService.sendNotification(title,content,token);
-    }
+
 }
