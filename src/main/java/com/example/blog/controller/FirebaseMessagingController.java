@@ -1,10 +1,6 @@
 package com.example.blog.controller;
 
-import com.example.blog.service.FirebaseMessagingService;
-import com.google.firebase.messaging.FirebaseMessagingException;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import com.example.blog.firebaseInterface.FirebaseMessagingService;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
