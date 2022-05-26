@@ -17,4 +17,9 @@ public class ScheduleTest {
     public void scheduleFixedDelayTest() {
         System.out.println("시간에 맞춰 1초마다 실행 실행");
     }
+
+    @Scheduled(fixedDelay = 4000 , initialDelay = 2000)
+    public void scheduleFixedDelayWithInitialDelayTest(){
+        System.out.println("처음은 2초뒤 실행 그후엔 4초 ");
+    }
 }
