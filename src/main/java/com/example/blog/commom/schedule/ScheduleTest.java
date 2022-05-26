@@ -7,12 +7,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class ScheduleTest {
-    
-    @Scheduled(fixedDelay = 1000)
-    public void scheduleTest() {
-        int count = 0;
-        count++;
-        System.out.println(count);
+
+    @Scheduled(fixedRate = 1000)
+    public void scheduleFixedRateTest() {
+        System.out.println("전 작업이 종료되고 1초 뒤 실행 ");
     }
 
+    @Scheduled(fixedDelay = 1000)
+    public void scheduleFixedDelayTest() {
+        System.out.println("시간에 맞춰 1초마다 실행 실행");
+    }
 }
