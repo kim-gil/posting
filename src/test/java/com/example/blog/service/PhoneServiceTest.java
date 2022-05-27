@@ -1,13 +1,12 @@
 package com.example.blog.service;
 
 import com.example.blog.domain.Phone;
+import com.example.blog.firebaseInterface.PhoneService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.concurrent.ExecutionException;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class PhoneServiceTest {

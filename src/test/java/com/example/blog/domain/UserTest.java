@@ -1,7 +1,7 @@
 package com.example.blog.domain;
 
-import com.example.blog.repository.UserRepository;
-import com.example.blog.repository.UserRepositorySupport;
+import com.example.blog.repository.user.UserRepository;
+import com.example.blog.repository.user.UserRepositorySupport;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
